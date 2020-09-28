@@ -1,0 +1,12 @@
+<section class="tracks-info">
+    {{#each tracks}}
+    <div class="card">
+        {{> artistPartial this}}
+        <div class="tracks">
+            <audio controls>
+                <source src="{{this.preview_url}}"/>
+            </audio>
+        </div>
+    </div>
+    {{/each}}
+</section>

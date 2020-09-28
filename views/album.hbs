@@ -1,0 +1,10 @@
+<section class="albums-info">
+    {{#each albums}}
+    <div class="card">
+        {{> artistPartial this}}
+        <div class="tracks">
+            <a href="/tracks/{{this.id}}">View Tracks</a>
+        </div>
+    </div>
+    {{/each}}
+</section>
