@@ -1,6 +1,6 @@
 {{#if images}}
-<img src="{{this.images.1.url}}" alt="{{this.name}}">
+<img class="card-img-top" src="{{this.images.1.url}}" alt="{{this.name}}">
 {{else}}
-<img src="./images/no-image.png" alt="No image available">
+<img class="card-img-top" src="./images/no-image.png" alt="No image available">
 {{/if}}
-<h1>{{this.name}}</h1>
+<h5 class="card-title pt-2 font-weight-bold">{{this.name}}</h5>

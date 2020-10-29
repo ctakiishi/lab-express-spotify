@@ -1,9 +1,9 @@
 <section class="artists-info">
     {{#each artists}}
-    <div class="card">
+    <div class="card text-center text-white bg-secondary pb-2 mb-4" style="width: 18rem;">
         {{> artistPartial this}}
         <div class="albums">
-            <a href="/albums/{{this.id}}">View Albums</a>
+            <a href="/albums/{{this.id}}" class="btn btn-primary">View Albums</a>
         </div>
     </div>
     {{/each}}
